@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "برنامج ولف اي أر بي",
+  title: "برنامج ولف اي أر بي تسجيل الدخول ",
   description:
     "برنامج ولف اي أر بي هو برنامج لإدارة الأعمال والمشاريع باللغة العربية. يساعدك على تنظيم وإدارة جميع جوانب عملك بكفاءة وسهولة.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function LoginLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="ar"
